@@ -1,10 +1,6 @@
 
 <?php
 
-
-
-
-   
 $conn= mysqli_connect('localhost','root','','routine');
  
 
@@ -32,33 +28,11 @@ if(isset($_POST['button1'])){
 
         $create_query= mysqli_query($conn,$query);
  
-
-  
- 
-   
    
 }
 
-
-  
-       
 }
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
-
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -170,19 +144,11 @@ if(isset($_POST['button1'])){
    
 } 
 
-
-
-
                   }
              
-             
-             
              ?>
-              
 
-
-
-          </form>
+     </form>
      
   </div>
 
@@ -224,10 +190,6 @@ if(isset($_POST['button1'])){
                     $Subject=$rd['sname'];
                     $Teacher=$rd['tname'];
                        
-                   
-
-               
-         
          
          
          ?>
@@ -242,8 +204,7 @@ if(isset($_POST['button1'])){
             <td> <?php  echo $Teacher;  ?> </td>
             <td>  <a href="admin.php?update=<?php  echo $ID;    ?>    " class="btn btn-info">Update</a> </td>
             <td>  <a href="admin.php?delete=<?php  echo $ID;    ?>    " class="btn btn-danger">Delete</a> </td>
-            
-         
+                
          </tr>
 
          <?php  }} else{
@@ -266,26 +227,16 @@ if(isset($_POST['button1'])){
       }
 
 ?>
-  
-<!-- DELETE QUERY START -->  
-
 
 <!-- Update QUery Start  -->
 
     <?php
     
-       
     
     ?>
 
-
   </div>
     
-
-
-
-
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
